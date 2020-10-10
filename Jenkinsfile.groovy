@@ -10,6 +10,7 @@ String getChangedFilesList() {
   return changedFiles
 }
 
+println currentBuild.changeSets
 println getChangedFilesList()
 
 // def call(Map inputPipelineParams) {
