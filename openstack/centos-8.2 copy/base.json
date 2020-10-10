@@ -2,7 +2,7 @@
   "variables": {
     "availability_zone": "ru-1a",
     "flavor": "faf056f7-128e-43b5-a43b-372debdf71b6",
-    "image_name": "centos-8.2",
+    "image_name": "centos-8.2-!",
     "image_name_postfix": "",
     "networks": "80d6604f-3425-49ff-a76a-c3ebf43bca83",
     "password": "X!xD0U?/zbv$",
