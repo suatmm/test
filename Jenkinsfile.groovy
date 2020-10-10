@@ -10,7 +10,7 @@ String getChangedFilesList() {
   return changedFiles
 }
 
-// println getChangedFilesList()
+println getChangedFilesList()
 
 // def call(Map inputPipelineParams) {
 //   pipelineParams = inputPipelineParams
