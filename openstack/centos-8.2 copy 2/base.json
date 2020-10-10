@@ -1,0 +1,37 @@
+{
+  "variables": {
+    "availability_zone": "ru-1a",
+    "flavor": "faf056f7-128e-43b5-a43b-372debdf71b6",
+    "image_name": "centos-8.2",
+    "image_name_postfix": "",
+    "networks": "80d6604f-3425-49ff-a76a-c3ebf43bca83",
+    "password": "X!xD0U?/zbv$",
+    "region": "ru-1",
+    "tenant_id": "79ba7bbe72d2441a8d2c7da52587fd96",
+    "token": "VgdTmU9P3ZjVuyy8S3LAULHRO_65073",
+    "volume_type": "basic.ru-1a",
+    "username": "ilya.solovyev"
+  },
+  "builders": [
+    {
+      "availability_zone": "{{ user `availability_zone` }}",
+      "domain_name": "65073",
+      "external_source_image_format": "qcow2",
+      "external_source_image_url": "https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.2.2004-20200611.2.x86_64.qcow2",
+      "flavor": "{{ user `flavor` }}",
+      "identity_endpoint": "https://api.selvpc.ru/identity/v3",
+      "image_name": "{{ user `image_name` }}{{ user `image_name_postfix` }}",
+      "image_disk_format": "raw", 
+      "networks": "{{ user `networks` }}",
+      "password": "{{ user `password` }}",
+      "region": "{{ user `region` }}",
+      "ssh_username": "root",
+      "tenant_id": "{{ user `tenant_id` }}",
+      "token": "{{ user `token` }}",
+      "type": "openstack",
+      "use_blockstorage_volume": true,
+      "username": "{{ user `username` }}",
+      "volume_type": "{{ user `volume_type` }}"
+    }
+  ]
+}
