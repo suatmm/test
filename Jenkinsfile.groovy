@@ -18,7 +18,7 @@ podTemplate(yaml: libraryResource("jenkins-agents/terraform.yaml")) {
       ])
     ])
 
-    stage('Terraform PLAN AND APPLY') {
+    stage('TEST GIT CHANGES') {
       container(name:'terraform', shell: "/bin/bash") {
         def scmVars = checkout(scm)
         // templateToProcessPaths = getChangedTemplateFiles()
