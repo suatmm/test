@@ -12,7 +12,6 @@
     "volume_type": "basic.ru-1a",
     "username": "ilya.solovyev"
   },
-  
   "builders": [
     {
       "availability_zone": "{{ user `availability_zone` }}",
